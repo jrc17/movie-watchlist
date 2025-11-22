@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="watchlist.html" class="webpage">My Watchlist</a></li>
+          <li><a href="index.html">Search for movies</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="empty-watchlist" class="empty-page">
+        <p>Your watchlist is looking a little empty...</p>
+        <a href="index.html"
+          ><i class="fa-solid fa-plus icon-btn"></i>Let’s add some movies!</a
+        >
+      </div>
+      <div id="watchlist" class="search-result"></div>
+    </main>
+
+    <script src="watchlist.js"></script>
+  </body>
+</html>
