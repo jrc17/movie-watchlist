@@ -36,6 +36,7 @@ ul {
 /* form */
 main {
   position: relative;
+  padding-top: 3.9375em;
 }
 form {
   background-color: white;
@@ -45,7 +46,7 @@ form {
   display: grid;
   grid-template-columns: 2fr 1fr;
   position: absolute;
-  top: -2%;
+  top: -15px;
   left: 25vw;
   box-shadow: 0 1px 2px rgb(0, 0, 0, 5%);
 }
@@ -113,7 +114,7 @@ form button {
   display: flex;
 }
 .search-result {
-  margin-top: 3.9375em;
+  /* margin-top: 3.9375em; */
 }
 
 .movie {

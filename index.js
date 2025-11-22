@@ -34,7 +34,7 @@ movieForm.addEventListener("submit", (e) => {
   }
 });
 async function searchMovie(title) {
-  const res = await fetch(`http://www.omdbapi.com/?apikey=${API}&s=${title}`);
+  const res = await fetch(`https://www.omdbapi.com/?apikey=${API}&s=${title}`);
   const data = await res.json();
 
   if (data.Response == "True") {
@@ -43,6 +43,7 @@ async function searchMovie(title) {
     noSearch.classList.remove("hidden");
     noSearch.innerHTML =
       "<p>Unable to find what you’re looking for. Please try another search.</p>";
+    searchResult.innerHTML = "";
   }
 }
 
@@ -50,7 +51,7 @@ function getMovieInfo(movies) {
   searchResult.innerHTML = "";
   movies.forEach(async (movie) => {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=${API}&t=${movie.Title}`
+      `https://www.omdbapi.com/?apikey=${API}&t=${movie.Title}`
     );
     const data = await res.json();
 
